@@ -17,7 +17,7 @@
   become: yes
   become_user: isucon
   git:
-    repo: https://github.com/isucon/isucon9-qualify.git
+    repo: https://github.com/er-k-aki/isucon9-qualify.git
     dest: /tmp/isucon9-qualify
     depth: 1
 

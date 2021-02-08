@@ -17,7 +17,7 @@
   become: yes
   become_user: isucon
   git:
-    repo: https://github.com/isucon/isucon9-qualify.git
+    repo: https://github.com/er-k-aki/isucon9-qualify.git
     dest: /tmp/isucon9-qualify
     depth: 1
 
@@ -25,6 +25,6 @@
   become: yes
   become_user: isucon
   shell: |
-    rsync -a --delete --exclude=.git --exclude=.gitignore --exclude=provisioning /tmp/isucon9-qualify/ /home/isucon/isucari/
+    rsync -a --delete --exclude=provisioning /tmp/isucon9-qualify/ /home/isucon/isucari/
   args:
     creates: /home/isucon/isucari/initial-data
